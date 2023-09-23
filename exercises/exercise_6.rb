@@ -8,6 +8,29 @@ require_relative './exercise_5'
 puts "Exercise 6"
 puts "----------"
 
+# Now, create store records
+
+@store1 = Store.create(
+  name: 'Burnaby',
+  annual_revenue: 300000,
+  mens_apparel: true,
+  womens_apparel: true
+)
+
+@store2 = Store.create(
+  name: 'Richmond',
+  annual_revenue: 1260000,
+  mens_apparel: false,
+  womens_apparel: true
+)
+
+@store3 = Store.create(
+  name: 'Surrey',
+  annual_revenue: 190000,
+  mens_apparel: true,
+  womens_apparel: false
+)
+
 @store1.employees.create(
   first_name: "Khurram",
   last_name: "Virani",
@@ -43,5 +66,3 @@ puts "----------"
   last_name: "Gabe",
   hourly_rate: 45
 )
-
-
